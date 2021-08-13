@@ -16,12 +16,12 @@ class Window(QWidget):
 
     def UI(self) -> None:
         TitleLabel = QLabel()
-        TitleLabel.setText("Rule34 Good Artists Database")
+        TitleLabel.setText("Booru Artists Database")
         TitleLabel.adjustSize()
         self.TableView = QTableWidget()
         self.TableView.setColumnCount(2)
         self.TableView.setRowCount(0)
-        self.TableView.setHorizontalHeaderLabels(['Artist username', 'Rule34 URL'])
+        self.TableView.setHorizontalHeaderLabels(['Artist username', 'Booru URL'])
         self.TableView.setShowGrid(True)
         self.TableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
         self.TableView.resizeColumnsToContents()
@@ -41,7 +41,7 @@ class Window(QWidget):
  
         self.setLayout(grid)
         self.setGeometry(300, 300, 200, 200)
-        self.setWindowTitle('R34GAD')
+        self.setWindowTitle('BooruADB')
         self.show()
         
     def get_data(self) -> None:
